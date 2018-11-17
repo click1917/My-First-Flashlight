@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".FlashlightActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="My First Flashlight App"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace" />
+
+    <ImageView
+        android:id="@+id/lightbulb"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/lightbulb_off" />
+
+    <Switch
+        android:id="@+id/light_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Flashlight Switch"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autoLink="all"
+        android:gravity="center"
+        android:text="Created at Code Cafe\nwww.meetup.com/join-code-cafe"
+        android:textSize="16sp" />
+
+</LinearLayout>
